@@ -1,0 +1,2 @@
+# Jbrowse
+Jbrowse Password setting

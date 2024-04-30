@@ -6,4 +6,6 @@ The document you can also check: https://www.cyberciti.biz/faq/howto-setup-apach
 
 1. Should login as "Root" 
 
-2.
+2. htpasswd -c /data01/epigenome/JBrowse.htpasswd schmitzlab1
+3. htpasswd /data01/epigenome/JBrowse.htpasswd schmitzlab1
+

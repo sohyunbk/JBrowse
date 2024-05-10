@@ -8,4 +8,4 @@ The document you can also check: https://www.cyberciti.biz/faq/howto-setup-apach
 
 2. htpasswd -c /data01/epigenome/JBrowse.htpasswd schmitzlab1
 3. htpasswd /data01/epigenome/JBrowse.htpasswd schmitzlab1
-
+cd  /var/www/html

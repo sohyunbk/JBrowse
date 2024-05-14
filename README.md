@@ -15,7 +15,7 @@ For additional reference, you can check: [How to Setup Apache Password Protect D
    ```bash
   htpasswd -c  /var/www/html/secure/apasswords  schmitzlab1
    ```
-   **It will ask the new password. Type the new password!**
+   *It will ask the new password. Type the new password!*
       
    ```bash
    chown apache:apache /var/www/html/secure/apasswords
@@ -29,11 +29,11 @@ For additional reference, you can check: [How to Setup Apache Password Protect D
    cd  /data01/epigenome/JBrowse/
    vi .htaccess
    ```
-   **Change the ".htaccess" file by typing below.**
+   *Change the ".htaccess" file by typing below.*
 
-   ```bash
+   <pre><code>
    AuthType Basic
    AuthName "Restricted Access"
    AuthUserFile /home/sec/var/www/html/secure/apasswords
    Require user schmitzlab1
-```
+   </code></pre>

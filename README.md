@@ -8,6 +8,7 @@ For additional reference, you can check: [How to Setup Apache Password Protect D
 2. **Make the `.htpasswd` file in the JBrowse directory.**
    ```bash
    sudo htpasswd -c /data01/epigenome/JBrowse/.htpasswd schmitzlab1
+   ```bash
 
 3.  **Apache should be configured "/var" directory. (/home directory is denied for authorization with root).**
    It will ask the new password. Type the new password!

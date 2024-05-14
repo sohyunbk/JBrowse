@@ -11,10 +11,13 @@ For additional reference, you can check: [How to Setup Apache Password Protect D
    ```
 
 3.  **Apache should be configured "/var" directory. (/home directory is denied for authorization with root).**
-   It will ask the new password. Type the new password!
+
    ```bash
   htpasswd -c  /var/www/html/secure/apasswords  schmitzlab1
-
+   ```
+      It will ask the new password. Type the new password!
+      
+   ```bash
    chown apache:apache /var/www/html/secure/apasswords
 
    chmod 0660 /var/www/html/secure/apasswords
@@ -25,9 +28,12 @@ For additional reference, you can check: [How to Setup Apache Password Protect D
    ```bash
    cd  /data01/epigenome/JBrowse/
    vi .htaccess
-
+   ```
    Change the ".htaccess" file by typing below.
+
+   ```bash
    AuthType Basic
    AuthName "Restricted Access"
    AuthUserFile /home/sec/var/www/html/secure/apasswords
    Require user schmitzlab1
+```

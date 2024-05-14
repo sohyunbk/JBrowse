@@ -9,7 +9,7 @@ For additional reference, you can check: [How to Setup Apache Password Protect D
    ```bash
    sudo htpasswd -c /data01/epigenome/JBrowse/.htpasswd schmitzlab1
 
-3.  **he should be configured "/var" directory. (/home directory is denied for authorization with root).**
+3.  **Apache should be configured "/var" directory. (/home directory is denied for authorization with root).**
    It will ask the new password. Type the new password!
    ```bash
   htpasswd -c  /var/www/html/secure/apasswords  schmitzlab1
@@ -18,27 +18,8 @@ For additional reference, you can check: [How to Setup Apache Password Protect D
 
    chmod 0660 /var/www/html/secure/apasswords
 
-# Jbrowse
-Jbrowse Password setting
+4.  ** Note: should make .htaccess file in "/data01/epigenome/JBrowse/". **
 
-The document you can also check: https://www.cyberciti.biz/faq/howto-setup-apache-password-protect-directory-with-htaccess-file/
-
-
-1. Should login as "Root" 
-
-2. Make the ".htpasswd" file in JBrowse directory.
-   sudo htpasswd -c /data01/epigenome/JBrowse/.htpasswd schmitzlab1
-   type the new password.
-3. Apache should be configured "/var" directory. (/home directory is denied for authorization with root)
-
-htpasswd -c  /var/www/html/secure/apasswords  schmitzlab1
-
-It will ask the new password. Type the new password!
-
-chown apache:apache /var/www/html/secure/apasswords 
-chmod 0660 /var/www/html/secure/apasswords
-
-4. Note: should make .htaccess file in "/data01/epigenome/JBrowse/".
    cd  /data01/epigenome/JBrowse/
    vi .htaccess
 

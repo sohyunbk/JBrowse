@@ -10,13 +10,12 @@ For additional reference, you can check: [How to Setup Apache Password Protect D
    sudo htpasswd -c /data01/epigenome/JBrowse/.htpasswd schmitzlab1
 
 3.  **he should be configured "/var" directory. (/home directory is denied for authorization with root).**
+   It will ask the new password. Type the new password!
    ```bash
   htpasswd -c  /var/www/html/secure/apasswords  schmitzlab1
 
-   It will ask the new password. Type the new password!
-   ```bash
    chown apache:apache /var/www/html/secure/apasswords
-   ```bash
+
    chmod 0660 /var/www/html/secure/apasswords
 
 # Jbrowse

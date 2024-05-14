@@ -18,6 +18,8 @@ For additional reference, you can check: [How to Setup Apache Password Protect D
    chown apache:apache /var/www/html/secure/apasswords
 
    chmod 0660 /var/www/html/secure/apasswords
+   ```
+
 
 4.  ** Note: should make .htaccess file in "/data01/epigenome/JBrowse/".**
    ```bash

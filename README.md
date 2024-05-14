@@ -1,4 +1,15 @@
 # Jbrowse
+## Jbrowse Password Setting
+
+For additional reference, you can check: [How to Setup Apache Password Protect Directory with htaccess File](https://www.cyberciti.biz/faq/howto-setup-apache-password-protect-directory-with-htaccess-file/)
+
+1. **Login as "Root"** 
+
+2. **Make the `.htpasswd` file in the JBrowse directory.**
+   ```bash
+   sudo htpasswd -c /data01/epigenome/JBrowse/.htpasswd schmitzlab1
+
+# Jbrowse
 Jbrowse Password setting
 
 The document you can also check: https://www.cyberciti.biz/faq/howto-setup-apache-password-protect-directory-with-htaccess-file/
